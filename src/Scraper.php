@@ -254,7 +254,7 @@ class Scraper
             return $app['id'];
         }, $apps);
 
-        return $this->getApps($ids);
+        return $this->getApps($ids, $lang, $country);
     }
 
     public function getDetailList($collection, $category = null, $lang = null, $country = null)
@@ -264,7 +264,7 @@ class Scraper
             return $app['id'];
         }, $apps);
 
-        return $this->getApps($ids);
+        return $this->getApps($ids, $lang, $country);
     }
 
     public function getSearch($query, $price = 'all', $rating = 'all', $lang = null, $country = null)
